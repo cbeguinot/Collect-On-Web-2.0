@@ -1,0 +1,105 @@
+ <section id="section_collect-on">
+        	{# Titre #}
+        	<h2>Qu'est-ce que Collect-On ?</h2>
+        	{# Intro #}
+        	<p class="intro">Collect-On fait intervenir particuliers et entreprises dans les démarches de collecte des associations. 
+        	Ces 3 acteurs sont mis en relation pour agir en faveur de l’économie circulaire.</p>
+
+        	{#si jamais on veut mettre une vidéo
+			          	<iframe width="560" height="315" src="https://www.youtube.com/embed/m4yteEZwMmA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			#}
+
+			{# TAB pour les acteurs #}
+			<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+			  
+			  	{# Tab-bar #}
+			  	<div class="mdl-tabs__tab-bar">
+			      	<a href="#particulier-panel" class="mdl-tabs__tab is-active">
+			      		Particuliers</a>
+			      	<a href="#asso-panel" class="mdl-tabs__tab">
+			      		Associations</a>
+			      	<a href="#entreprise-panel" class="mdl-tabs__tab">
+			      		Entreprises</a>
+			      	<a href="#video-panel" class="mdl-tabs__tab">
+			      		En vidéo</a>
+			  	</div> {# /.Tab-bar #}
+
+			  	{# TAB PANEL : Particulier #}
+				<div class="mdl-tabs__panel is-active" id="particulier-panel">
+				  	<div class="mdl-grid">
+				  		{# 3/12 : perso #}
+				  		<div class="mdl-cell mdl-cell--3-col ">
+			        		<img class="perso" src="{{asset('img/perso_particulier.png')}}" alt="smth"/>
+			        	</div>
+			        	{# 8/12  : texte #}
+			        	<div class="mdl-cell mdl-cell--8-col mdl-cell--1-offset">
+						    <h3>Particuliers</h3>
+			        		<ul>
+			        			<li> <i class="material-icons">my_location</i> Identifiez les associations les plus à même de collecter vos biens.</li>
+			        			<li> <i class="material-icons">send</i> Suivez le parcours de vos dons.</li>
+			        			<li> <i class="material-icons">group</i> Impliquez vous dans la vie de vos associations favorites et échangez avec la communauté.</li>
+			        		</ul>
+	        			</div>
+	        		</div>
+			  	</div> {# /.TAB PANEL : Particulier #}
+
+			  	{# TAB PANEL : Asso #}
+			  	<div class="mdl-tabs__panel" id="asso-panel">
+			  		<div class="mdl-grid">
+			  			{# perso #}
+			        	<div class="mdl-cell mdl-cell--3-col">
+							<img class="perso" src="{{asset('img/perso_asso.png')}}" alt="smth"/>
+			        	</div>
+			        	{# Text #}
+				  		<div class="mdl-cell mdl-cell--8-col mdl-cell--1-offset">
+			    			<h3>Associtations</h3>
+			    			<ul>
+			    				<li> <i class="material-icons">notifications_active</i> Faites connaitre votre association et mobilisez des bénévoles pour vos évènements.</li>
+								<li><i class="material-icons">info_outline</i> Communiquez sur vos objectifs de collecte et vos résultats.</li>
+								<li><i class="material-icons">timeline</i> Suivez l'organisation de vos collectes et vos autres échanges avec particuliers et entreprises</li>
+							</ul>
+				  		</div>
+			        </div>
+			    </div> {# /.TAB PANEL : Asso #}
+			  
+			    {# TAB PANEL : Entreprise #}
+			  	<div class="mdl-tabs__panel" id="entreprise-panel">
+			  		<div class="mdl-grid">
+			  			{# Perso #}
+				  		<div class="mdl-cell mdl-cell--3-col">
+		        			<img class="perso" src="{{asset('img/perso_entreprise.png')}}" alt="smth"/>
+				  		</div>
+				  		{# Text #}
+				  		<div class="mdl-cell mdl-cell--8-col mdl-cell--1-offset">
+						    <h3>Entreprises</h3>
+						    <ul>
+				        		<li><i class="material-icons">find_replace</i>Prenez connaissances des besoins des associations via la plateforme.</li>
+				        		<li><i class="material-icons">done_all</i>Soutenez les dans leurs démarches et bénéficiez d’une réduction d’impôt de 60% de la valeur de vos dons matériels, permanents ou temporaires.</li>
+				        		<li><i class="material-icons">mood</i>Impliquez vos salariés dans des évènements caritatifs et RSE.</li>
+				        	</ul>	
+				  		</div>
+				  	</div>
+			  	</div> {# /.TAB PANEL : Entreprise#}
+			
+
+				{# TAB PANEL : Vidéo #}
+				<div class="mdl-tabs__panel" id="video-panel">
+					<div class="mdl-grid mdl-typography--text-center">
+						<div class="mdl-cell mdl-cell--2-col">
+									
+						</div>
+						<div class="mdl-cell mdl-cell--8-col">
+						    <iframe height="400" src="https://www.youtube.com/embed/9VIEF_0xD7E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
+						<div class="mdl-cell mdl-cell--2-col">
+						        	
+						</div>
+				    </div>
+
+				</div>{# ./TAB PANEL : vidéo #}
+			
+			</div> {# /.TAB #}
+			
+        	
+
+        </section> 

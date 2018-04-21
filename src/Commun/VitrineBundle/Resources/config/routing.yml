@@ -1,0 +1,3 @@
+commun_vitrine_homepage:
+    path:     /
+    defaults: { _controller: CommunVitrineBundle:Default:accueil }

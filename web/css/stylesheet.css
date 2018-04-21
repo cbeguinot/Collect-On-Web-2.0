@@ -1,0 +1,417 @@
+/*FONTS*/
+/*-----*/
+@font-face {
+  font-family: 'Lemon/Milk';
+  src: url('http://www.fontsaddict.com/fontface/lemonmilk.ttf');
+}
+
+/*Couleurs*/
+.greenCO{ color : #3cb482; }
+
+
+/*HEADER*/
+/*------*/
+
+/*contenu du header : text + icones + textfield */
+.mdl-layout__header, .mdl-layout__header i, .mdl-layout__header input{
+	color : rgb(230,230,230);
+}
+/*liens*/
+.mdl-layout__header .mdl-navigation__link{
+	color :grey;
+}
+/*liens hover*/
+.mdl-layout__header .mdl-navigation__link:hover{
+	color : #1e6432;
+}
+
+/*logo raccon*/
+header .racoon{
+	height: 70%;
+	vertical-align: auto;
+}
+
+
+
+/*MENU*/
+/*----*/
+
+/*ligne de séparation*/
+hr{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+/*HERO*/
+/*----*/
+
+/*taille du logo*/
+.hero-section .racoon{
+	height: 70px;
+}
+/*taille du titre*/
+#title_CO{
+	height : 50px;
+}
+
+/*Taille de la section et tout le bordel*/
+.hero-section {
+  height: 85vh;
+  /* IE11 doesn't like min-height */
+
+  /*Prend toute la largeur et cie*/
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  /*Background*/
+  /*background-color: teal;*/
+  background-color: #3cb482;
+  /*Si on avait voulu une image : */
+  /*background-image: url("../img/backleft.png"), url("../img/backright.png");
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+
+  position: relative;
+  /*Jsp mais on va le laisser*/
+  display: flex;
+  flex-direction: column;
+
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+/*text*/
+.hero-text {
+  color: white;
+  margin: auto;
+}
+.century{
+ 	font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif; 
+ 	font-size: 20px;
+}
+
+
+@media screen and (max-width: 580px) {
+  .hero-text p {
+    white-space: pre-line;
+  }
+}
+
+/*Bouton suite arrow_down*/
+.hero__text-button {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/*CARD début inscription*/
+.mdl-card{
+	width: 100%;
+	margin: auto;
+	margin-top: 30px;
+}
+.mdl-card .mdl-card__supporting-text{
+	text-align: left;
+}
+.mdl-card button{
+	vertical-align: bottom;
+}
+
+
+/*----------DIALOG--------
+/*-----------------------*/
+dialog{
+  text-align: right;
+}
+
+dialog h3{
+  text-align: center;
+}
+
+dialog .mdl-dialog__content{
+  text-align: left;
+}
+
+#show-dialog-sign-up:hover{
+  cursor: hand;
+}
+
+.mdl-dialog{
+  width: 40%;
+}
+
+dialog .mdl-textfield__input{
+    color: grey;
+}
+
+/*SECTIONS*/
+/*--------*/
+
+section{
+	padding: 10vh 10%
+}
+
+section h2{
+	font-family: 'Lemon/Milk';
+	color: #1e6432;
+	font-size: 36px;
+}
+
+section h3{
+  font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif; 
+  padding: 20px 0px;
+}
+
+section:nth-child(2n+1){
+	background-color: rgb(245,245,245);
+}
+
+.perso{
+	height: 300px;
+}
+
+
+a .mdl-chip{
+  float: right;
+  color:white;
+  height: auto;
+  line-height: 16px;
+  font-size: 8px;
+}
+
+
+
+.img__menu{
+  height : auto;
+  width: 50%;
+  margin: 0px auto 20px auto;
+}
+
+.info__menu{
+  text-align: center;
+  padding: 20px 0px;
+}
+
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link{
+  padding-left: 5%;
+}
+
+.mdl-navigation__link i{
+  padding: 0px 10px;
+  font-size: 18px;
+}
+
+
+
+/* ACCUEIL */
+/*---------*/
+
+section .intro, section p{
+  width: 60%;
+  margin: 20px 0px 40px 0px;
+  color : grey;
+}
+
+#section_collect-on ul{
+  color: grey;
+  font-size: 16px;
+  list-style: none;
+}
+
+#section_collect-on li{
+  margin: 16px 0px;
+}
+
+#section_collect-on i{
+  padding-right : 16px;
+  float: left;
+  color : #3cb482;
+}
+
+
+#section_suivez-nous a i{
+  color: #3cb482;
+  margin-right: 30px;
+}
+
+
+/* FOOTER */
+/*--------*/
+
+footer a i{
+  color: white;
+  margin-right: 30px;
+}
+
+
+#team-panel img{
+  width: 15%;
+  margin: 0px 2%;
+}
+
+.asso_logo{
+  height: 120px;
+  margin: 16px;
+}
+
+
+section h3+p{
+  margin-top : -20px;
+  width: 100%;
+}
+
+
+.ehoh .mdl-card {
+  margin:0px;
+}
+
+
+
+/*------------------------------------------------------------------------------------------*/
+/*         PROFIL                                                                           */
+/*--------------------------------------------------------------------------------------------*/
+.page__profil .mdl-cell{
+  position: relative;
+  overflow: hidden;
+}
+
+.page__profil .mdl-card{
+  min-height: 10px;
+  width: 90%;
+  margin: 5%;
+}
+.page__profil img{
+  width: 100%;
+}
+.page__profil .edit{
+  float: right;
+  margin: 20px;
+
+}
+
+#pp{
+  margin: auto;
+  text-align: center;
+}
+
+label{
+  padding-right: 20px;
+}
+
+textarea{
+  width: 100%;
+}
+
+
+
+
+/*----------------------------------ESPACE PERSO-------------*/
+#right{
+  position: relative; /*Pour permettre le fixed tabs*/
+}
+
+/*Section sans padding et margin, relou*/
+#right section{
+  padding:0px;
+  margin:0px;
+}
+
+/*Espace entre les cartes*/
+aside .mdl-card{
+  box-sizing:border-box;
+  margin : 0px 10px 30px 10px;
+}
+aside .mdl-card:last-child{
+  
+}
+
+/*Une table occupe la largeur max*/
+#tab_collectes, #tab_collectes table, #tab_appels table{
+  width: 100%;
+}
+
+/*On peut scroller les tables si elles sont plus grandes*/
+#tab_collectes, #tabl_appels{
+  overflow: scroll;
+}
+
+/*Map largeur totale*/
+#map{
+  width: 100%;
+  height: 400px;
+}
+
+/*TABLE COLLECTES*/
+/*Liens collecte en vert*/
+#tab_collectes td a{
+  color : #3cb482;
+  text-decoration: none;
+}
+
+/*TABLE APPELS*/
+/*Liens entreprise orange*/
+#tab_appels td a{
+  color : orange;
+  text-decoration: none;
+}
+
+
+#mdl-layout__content_espacePerso{
+  overflow: hidden;
+}
+
+.espacePerso #right, .espacePerso #left{
+  height: 100%;
+  overflow: scroll;
+}
+
+
+.espacePerso #right::-webkit-scrollbar, /*.espacePerso #left::-webkit-scrollbar,*/ .mdl-layout__content_espacePerso::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+
+
+#tg{
+  height: 120px;
+}
+#tg2{
+  height: 80px;
+}
+
+
+button .orange{
+  color : orange;
+}
+
+.yellow{
+  background-color: #FEEC8E;
+}
+
+.yellow i{
+  color : orange;
+}
+
+.mdl-menu__item i{
+  padding: 10px 8px 5px 0px;
+}
+
+
+
+.publi{
+  width: 100%;
+}
+.pub{
+  width: 40%;
+}
+.black{
+  color:black;
+}

@@ -1,0 +1,3 @@
+commun_vitrine:
+    resource: "@CommunVitrineBundle/Resources/config/routing.yml"
+    prefix:   /

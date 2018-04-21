@@ -1,0 +1,115 @@
+{% extends "CommunVitrineBundle::base.html.twig" %}
+
+{# titre onglet #}
+{% block title %}
+Accueil
+{% endblock %}
+
+{# content #}
+{% block body %}
+
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+		{# HEADER statique fond gris clair #}
+	    <header class="mdl-layout__header mdl-color--grey-50 ">
+
+	    	{# Avec le menu hamburger #}
+			<div class="mdl-layout__header-row mdl-color--transparent ">
+				{# Title #}
+				<span class="mdl-layout-title">
+					{# Logo racoon #}
+		    		{#<img class="racoon" src="{{asset('img/CO.png')}}" alt="smth"/>#}
+				</span>
+		
+				{# Add spacer, to align navigation to the right #}
+		        <div class="mdl-layout-spacer"></div>
+		        
+		        {# NAVIGATION. We hide it in small screens. #}
+		        <nav class="mdl-navigation mdl-layout--large-screen-only">
+					
+					<a class="mdl-navigation__link" href="#section_collect-on">NOUS DECOUVRIR</a>
+
+					<a class="mdl-navigation__link" href="#section_actualites">NOS ACTUALITES</a>
+
+		            {# /!\ CODER LE FORM #}
+		            <a class="mdl-navigation__link" id="show-dialog-sign-up">S'INSCRIRE</a>
+
+
+		            {# block form_sign_up #}
+					    {#{{ include("CommunLoginBundle:Default:sign_up.html.twig")}}#}
+					{# endblock #}
+
+		            
+		            {# /!\ CODER LE FORM : en attendant on passe direct à espace perso avec une session test #}
+		            <a class="mdl-navigation__link site-header__cta site-header__cta--desktop" {# href="{{ path('asso_espace_perso')}} " #}>
+			            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="show-dialog-sign-in">
+			            	SE CONNECTER
+			            </button>
+					</a>
+
+					{# block form_sign_in #}
+						{# {{ include("CommunLoginBundle:Default:sign_in.html.twig")}}#}
+					{# endblock #}
+		            	
+		        </nav>
+		    </div>
+	    </header> {# ./end HEADER #}
+
+
+     	<main class="mdl-layout__content">
+     		
+
+     		{# CONTENU #}
+        	<div class="page-content">
+
+	      		{# HERO SECTION #}
+	      		{{ include("CommunVitrineBundle:vitrine:hero.html.twig") }}
+	        	{# /.HERO SECTION #}
+      
+	    		{# SECTION COLLECT-ON #}
+	    		{{ include("CommunVitrineBundle:vitrine:collect-on.html.twig") }}
+       			{# /.SECTION Collect-on#}
+
+        		{# SECTION QUI SOMMES NOUS #}
+        		{{ include("CommunVitrineBundle:vitrine:qui-sommes-nous.html.twig") }}
+
+		        {# SECTION ACTUALITES #}
+		        {{ include("CommunVitrineBundle:vitrine:actualites.html.twig") }}
+		       	{# ./SECTION actualités #}
+
+		        {# SECTION SUIVEZ NOUS #}
+		        {{ include("CommunVitrineBundle:vitrine:suivez-nous.html.twig") }}
+		       	{# ./SECTION suivez nous #}
+   			</div>
+
+
+			<footer class="mdl-mini-footer">
+		  		<div class="mdl-mini-footer__left-section">
+		    		<div class="mdl-logo">Collect-On</div>
+		    		<ul class="mdl-mini-footer__link-list">
+		      			<li><a href="#">Accueil</a></li>
+		      			<li><a href="#section_collect-on">Nous découvrir</a></li>
+		      			<li><a href="#section_actualites">Actualités</a></li>
+		      			<li><a href="#">S'inscrire</a></li>
+		      			<li><a href="#">Se connecter</a></li>
+		    		</ul>
+		  		</div>
+
+		  		<div class="mdl-mini-footer__right-section">
+		  			<a href="https://www.facebook.com/CollectOnApp/">
+		  				<i class="fa fa-facebook fa-2x"></i>
+		  			</a>
+		  			<a href="https://twitter.com/CollectOnApp">
+		  				<i class="fa fa-twitter fa-2x"></i>
+		  			</a>
+		  			<a href="https://www.instagram.com/collectonapp/">
+		  				<i class="fa fa-instagram fa-2x"></i>
+		  			</a>
+		  		</div>
+			</footer>
+
+		</main>
+
+    </div>
+
+{% endblock %}
